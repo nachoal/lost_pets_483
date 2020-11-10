@@ -1,0 +1,15 @@
+<%= form_for(pet) do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :species %>
+  <%= form.text_field :species %>
+
+  <%= form.label :address %>
+  <%= form.text_field :address %>
+
+  <%= form.label 'When did you find?' %>
+  <%= form.date_field :date_found %>
+
+  <%= form.submit %>
+<% end %>

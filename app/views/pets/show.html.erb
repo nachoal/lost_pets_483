@@ -1,0 +1,8 @@
+<h1><%= @pet.name %></h1>
+<ul>
+  <li>Address: <%= @pet.address %></li>
+  <li>Species: <%= @pet.species %></li>
+  <li>Found at: <%= @pet.date_found %></li>
+</ul>
+<%= link_to 'Delete pet', @pet ,method: :delete, data: { confirm: 'Do you really want to delete?'}  %>
+<%= link_to 'Home', @pet%>
